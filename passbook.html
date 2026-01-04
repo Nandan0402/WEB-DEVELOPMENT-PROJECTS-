@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passbook - Paytm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .passbook-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .balance-card {
+            background: white;
+            padding: 24px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .balance-amount {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dark-bg);
+            margin: 10px 0;
+        }
+
+        .transaction-list {
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .transaction-item {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .transaction-item:last-child {
+            border-bottom: none;
+        }
+
+        .tx-info h4 {
+            margin-bottom: 4px;
+        }
+
+        .tx-time {
+            color: var(--gray-text);
+            font-size: 12px;
+        }
+
+        .tx-amount {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .tx-amount.debit {
+            color: #333;
+        }
+
+        .tx-amount.credit {
+            color: #21c17a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container flex justify-between">
+            <a href="index.html" class="logo">paytm</a>
+            <div class="flex" style="gap: 20px;">
+                <span style="font-weight: 600;">Welcome, User</span>
+                <button class="btn btn-outline" style="padding: 6px 16px; font-size: 14px;"
+                    onclick="window.location.href='index.html'">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container passbook-grid">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="balance-card">
+                <div style="font-size: 14px; color: var(--gray-text); font-weight: 600;">Available Balance</div>
+                <div class="balance-amount">₹ 4,250.50</div>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 10px;">Add Money to Wallet</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2 style="margin-bottom: 20px;">Recent Transactions</h2>
+            <div class="transaction-list">
+                <div class="transaction-item">
+                    <div class="flex" style="gap: 16px;">
+                        <div
+                            style="width: 48px; height: 48px; background: #ffeeee; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: red;">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                        <div class="tx-info">
+                            <h4>Paid to Zomato</h4>
+                            <span class="tx-time">Today, 2:30 PM</span>
+                        </div>
+                    </div>
+                    <div class="tx-amount debit">- ₹ 450.00</div>
+                </div>
+
+                <div class="transaction-item">
+                    <div class="flex" style="gap: 16px;">
+                        <div
+                            style="width: 48px; height: 48px; background: #eeffee; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: green;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="tx-info">
+                            <h4>Added from Bank Account</h4>
+                            <span class="tx-time">Yesterday, 10:00 AM</span>
+                        </div>
+                    </div>
+                    <div class="tx-amount credit">+ ₹ 2,000.00</div>
+                </div>
+
+                <div class="transaction-item">
+                    <div class="flex" style="gap: 16px;">
+                        <div
+                            style="width: 48px; height: 48px; background: #eeeeff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: blue;">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+                        <div class="tx-info">
+                            <h4>Mobile Recharge - Jio</h4>
+                            <span class="tx-time">28 Dec 2025, 6:15 PM</span>
+                        </div>
+                    </div>
+                    <div class="tx-amount debit">- ₹ 299.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

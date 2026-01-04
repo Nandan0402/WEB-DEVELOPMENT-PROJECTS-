@@ -1,28 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone - Watch TV Shows Online, Watch Movies Online</title>
+    <title>Paytm: Secure & Fast UPI Payments, Recharge Mobile & Pay Bills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="navbar">
-        <a href="index.html" class="logo">NETFLIX</a>
-        <a href="login.html" class="btn btn-primary">Sign In</a>
+
+    <header>
+        <div class="container flex justify-between">
+            <a href="index.html" class="logo">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/310944/1697527183231.png" alt="Paytm"
+                    style="height: 50px;">
+            </a>
+
+            <nav class="nav-links flex">
+                <a href="#">Paytm for Consumer</a>
+                <a href="#">Paytm for Business</a>
+                <a href="#">Company</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Career</a>
+            </nav>
+
+            <button class="btn btn-login" onclick="window.location.href='login.html'">
+                <span>Sign In</span>
+                <img src="https://pwebassets.paytm.com/commonwebassets/commonweb/images/user.svg" alt=""
+                    style="margin-left: 5px;">
+            </button>
+        </div>
+    </header>
+
+    <div
+        style="background: #f5f7fa; text-align: center; padding: 12px; font-weight: 600; font-size: 14px; border-bottom: 1px solid #e0e0e0;">
+        <span style="font-weight: 800;">No Wallet KYC Required</span>
+        <span style="font-size: 20px; vertical-align: middle;">😊</span>
+        to pay using UPI on Paytm.
+        <a href="#" style="font-weight: 700; color: var(--text-main);">Learn more.</a>
     </div>
 
-    <div class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Unlimited movies, TV shows, and more.</h1>
-            <p class="hero-subtitle">Watch anywhere. Cancel anytime.</p>
-            <p class="hero-subtitle" style="font-size: 1.2rem; margin-top: 1rem;">Ready to watch? Enter your email to create or restart your membership.</p>
-            
-            <form class="email-form" action="login.html">
-                <input type="email" class="email-input" placeholder="Email address" required>
-                <button type="submit" class="btn btn-primary btn-large">Get Started ></button>
-            </form>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-left">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/310944/1697527183231.png" alt="Paytm"
+                    style="height: 80px; margin-left: -5px;">
+                <h1>India's Most-loved Payments App</h1>
+                <p>Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual
+                    funds, and do a lot more.</p>
+                <div class="flex gap-20">
+                    <button class="btn"
+                        style="background: black; color: white; border-radius: 5px; padding: 10px 20px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-brands fa-apple" style="font-size: 24px;"></i>
+                        <div style="text-align: left; line-height: 1.2;">
+                            <div style="font-size: 10px;">Download on the</div>
+                            <div style="font-size: 16px;">App Store</div>
+                        </div>
+                    </button>
+                    <button class="btn"
+                        style="background: black; color: white; border-radius: 5px; padding: 10px 20px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-brands fa-google-play" style="font-size: 22px;"></i>
+                        <div style="text-align: left; line-height: 1.2;">
+                            <div style="font-size: 10px;">Get it on</div>
+                            <div style="font-size: 16px;">Google Play</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1697527185726.png"
+                    alt="Paytm App Interface">
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Cyan Service Strip -->
+    <section class="cyan-strip">
+        <div class="container">
+            <h3 style="margin-bottom: 25px; font-size: 22px; font-weight: 700;">Recharge & Pay Bills on Paytm.</h3>
+            <div class="cyan-services">
+                <div class="cyan-item" onclick="window.location.href='recharge.html'">
+                    <i class="fa-solid fa-mobile-screen cyan-icon"></i>
+                    <span class="cyan-text">Recharge</span>
+                    <span class="cyan-text" style="font-weight: 400; font-size: 12px;">Prepaid/Post...</span>
+                </div>
+                <div class="cyan-item" onclick="window.location.href='recharge.html'">
+                    <i class="fa-solid fa-lightbulb cyan-icon"></i>
+                    <span class="cyan-text">Electricity</span>
+                </div>
+                <div class="cyan-item" onclick="window.location.href='recharge.html'">
+                    <i class="fa-solid fa-satellite-dish cyan-icon"></i>
+                    <span class="cyan-text">DTH</span>
+                </div>
+                <div class="cyan-item">
+                    <i class="fa-solid fa-fire-burner cyan-icon"></i>
+                    <span class="cyan-text">Gas Cylinder</span>
+                </div>
+                <div class="cyan-item">
+                    <i class="fa-solid fa-credit-card cyan-icon"></i>
+                    <span class="cyan-text">Credit Card</span>
+                </div>
+                <div class="cyan-item">
+                    <i class="fa-solid fa-house-chimney cyan-icon"></i>
+                    <span class="cyan-text">Rent</span>
+                </div>
+                <div class="cyan-item">
+                    <i class="fa-solid fa-graduation-cap cyan-icon"></i>
+                    <span class="cyan-text">Education</span>
+                </div>
+                <div class="cyan-item">
+                    <i class="fa-solid fa-plus cyan-icon"></i>
+                    <span class="cyan-text">All Services</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book & Buy -->
+    <section class="container" style="padding: 60px 0;">
+        <h1 class="section-title">Book & Buy</h1>
+        <div class="blue-services">
+            <div class="blue-item">
+                <i class="fa-solid fa-film"></i>
+                <span>Movie Tickets</span>
+            </div>
+            <div class="blue-item">
+                <i class="fa-solid fa-plane-up"></i>
+                <span>Flight Tickets</span>
+            </div>
+            <div class="blue-item">
+                <i class="fa-solid fa-bus"></i>
+                <span>Bus Tickets</span>
+            </div>
+            <div class="blue-item">
+                <i class="fa-solid fa-train"></i>
+                <span>Train Tickets</span>
+            </div>
+            <div class="blue-item">
+                <i class="fa-solid fa-motorcycle"></i>
+                <span>Bike</span>
+            </div>
+            <div class="blue-item">
+                <i class="fa-solid fa-car"></i>
+                <span>Car</span>
+            </div>
+            <div class="blue-item">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <span>International</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px;">
+                <h4 style="font-size: 20px; font-weight: 700;">Download Paytm App to Pay from anywhere</h4>
+                <div class="flex gap-10">
+                    <img src="https://pwebassets.paytm.com/commonwebassets/commonweb/images/app-store.svg"
+                        alt="App Store" style="height: 40px; cursor: pointer;">
+                    <img src="https://pwebassets.paytm.com/commonwebassets/commonweb/images/google-play.svg"
+                        alt="Play Store" style="height: 40px; cursor: pointer;">
+                </div>
+            </div>
+            <hr style="border: none; border-top: 1px solid #ddd; margin-bottom: 20px;">
+            <p style="text-align: center; color: var(--text-muted); font-size: 13px;">© 2026 Paytm Clone. All Rights
+                Reserved. This is a demo project.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

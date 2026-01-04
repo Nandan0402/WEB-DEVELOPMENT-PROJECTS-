@@ -4,39 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix - Sign In</title>
+    <title>Log In to Paytm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="login-body">
-    <div class="navbar">
-        <a href="index.html" class="logo">NETFLIX</a>
-    </div>
+<body style="background-color: #e6f5fa; min-height: 100vh; display: flex; flex-direction: column;">
 
-    <div class="login-card">
-        <h1 class="login-title">Sign In</h1>
-        <form action="browse.html">
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email or phone number" required>
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" value="password" required>
-            </div>
-            <button type="submit" class="btn btn-primary login-btn">Sign In</button>
+    <header style="height: auto; padding: 20px 0; background: transparent; box-shadow: none;">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/310944/1697527183231.png" alt="Paytm"
+                    style="height: 40px;">
+            </a>
+        </div>
+    </header>
 
-            <div class="login-help">
-                <div>
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Remember me</label>
+    <div class="container"
+        style="flex: 1; display: flex; align-items: center; justify-content: center; padding-bottom: 60px;">
+        <div
+            style="background: white; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.1); width: 100%; max-width: 800px; display: flex; overflow: hidden; min-height: 500px;">
+
+            <!-- Instruction Side -->
+            <div
+                style="background: #f5f7fa; width: 45%; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Login with QR Code</h3>
+                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 30px;">Scan the QR code with your
+                    Paytm App to login securely.</p>
+                <div
+                    style="background: white; width: 180px; height: 180px; margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 8px;">
+                    <!-- Placeholder for QR Code -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
+                        alt="QR" style="width: 150px; opacity: 0.8;">
                 </div>
-                <a href="#">Need help?</a>
             </div>
-        </form>
 
-        <div style="margin-top: 50px; color: #737373;">
-            New to Netflix? <a href="index.html" style="color: white; hover: underline;">Sign up now</a>.
+            <!-- Form Side -->
+            <div style="width: 55%; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 30px;">Login via Mobile Number</h3>
+
+                <form onsubmit="event.preventDefault(); window.location.href='passbook.html';">
+                    <div style="margin-bottom: 25px;">
+                        <label
+                            style="display: block; font-size: 13px; font-weight: 600; color: var(--text-muted); margin-bottom: 8px;">Mobile
+                            Number</label>
+                        <input type="text" placeholder="Enter Mobile Number"
+                            style="width: 100%; border: 1px solid #e0e0e0; padding: 12px; border-radius: 5px; font-size: 16px; font-weight: 500;">
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <label
+                            style="display: block; font-size: 13px; font-weight: 600; color: var(--text-muted); margin-bottom: 8px;">Password</label>
+                        <input type="password" placeholder="Enter Password"
+                            style="width: 100%; border: 1px solid #e0e0e0; padding: 12px; border-radius: 5px; font-size: 16px; font-weight: 500;">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; border-radius: 5px; font-size: 16px; padding: 15px;">Secure Login</button>
+
+                    <div style="margin-top: 20px; text-align: center; font-size: 13px;">
+                        <a href="#" style="color: var(--paytm-light-blue); font-weight: 600;">Forgot Password?</a>
+                        <span style="color: #ddd; margin: 0 10px;">|</span>
+                        <a href="#" style="color: var(--paytm-light-blue); font-weight: 600;">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
+
 </body>
 
 </html>
