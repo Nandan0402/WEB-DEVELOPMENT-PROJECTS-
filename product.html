@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <!-- Sidebar (shared) -->
+    <div class="sidebar-container-navigation" id="sidebar-container">
+        <div class="sidebar-left-part">
+            <div class="sidebar-top">
+                <div style="background: white; border-radius: 50%; height: 25px; width: 25px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                    <div style="background: #232f3e; height: 10px; width: 10px; border-radius: 50%; margin-top: -5px;"></div>
+                    <div style="background: #232f3e; height: 10px; width: 16px; border-radius: 50%; position: absolute; margin-top: 12px;"></div>
+                </div>
+                <h2>Hello, sign in</h2>
+                <div id="sidebar-close-btn" style="color: #fff; font-size: 30px; cursor: pointer; position: absolute; right: -40px; top: 0px;">&times;</div>
+            </div>
+        </div>
+        <div class="sidebar-wrap">
+            <div class="sidebar-item">
+                <h2>Trending</h2>
+                <p>Bestsellers</p>
+                <p>New Releases</p>
+                <p>Movers and Shakers</p>
+            </div>
+            <div class="sidebar-item">
+                <h2>Digital Content and Devices</h2>
+                <p>Echo & Alexa <span>&#8250;</span></p>
+                <p>Fire TV <span>&#8250;</span></p>
+                <p>Kindle E-Readers & eBooks <span>&#8250;</span></p>
+                <p>Audible Audiobooks <span>&#8250;</span></p>
+                <p>Amazon Prime Video <span>&#8250;</span></p>
+                <p>Amazon Prime Music <span>&#8250;</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-right-part" id="sidebar-overlay"></div>
+
+    <nav>
+        <a href="index.html">
+            <img src="./assets/amazon_logo.png" width="100px" alt="amazon_logo">
+        </a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20px" alt="">
+            <div>
+                <p>Deliver to</p>
+                <h1>United Kingdom</h1>
+            </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12px" alt="">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Amazon">
+            <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
+        </div>
+        <div class="nav-language">
+            <img src="./assets/us_flag.png" width="25px" alt="">
+            <p>EN</p>
+            <img src="./assets/dropdown_icon.png" width="8px" alt="">
+        </div>
+        <a href="signin.html" class="nav-text">
+            <p>Hello, Sign in</p>
+            <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""></h1>
+        </a>
+        <div class="nav-text">
+            <p>Return</p>
+            <h1>& Orders </h1>
+        </div>
+        <a href="cart.html" class="nav-cart">
+            <img src="./assets/cart_icon.png" width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+    <div class="nav-bottom">
+        <div>
+            <img src="./assets/menu_icon.png" width="25px" alt="">
+            <p>All</p>
+        </div>
+        <p>Today's Deals</p>
+        <p>Customer Service</p>
+        <p>Registry</p>
+        <p>Gift Cards</p>
+        <p>Sell</p>
+    </div>
+
+    <div class="product-display">
+        <div class="product-d-image">
+            <div class="product-list-image">
+                <img src="./assets/product_img.jpg" width="60" alt="">
+                <img src="./assets/product_img.jpg" width="60" alt="">
+                <img src="./assets/product_img.jpg" width="60" alt="">
+                <img src="./assets/product_img.jpg" width="60" alt="">
+            </div>
+            <div class="product-main-image">
+                <img src="./assets/product_img.jpg" width="400" alt="">
+            </div>
+        </div>
+        <div class="product-d-details">
+            <p class="product-title">Apple iPad (9th Generation): with A13 Bionic chip, 10.2-inch Retina Display, 64GB,
+                Wi-Fi, 12MP front/8MP Back Camera, Touch ID, All-Day Battery Life - Space Gray</p>
+            <a href="#" class="product-store">Visit the Apple Store</a>
+            <div class="product-rating">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>25,789 ratings | 1000+ answered questions</p>
+            </div>
+            <div class="product-prices">
+                <div class="product-price-main">
+                    <p>-24%</p>
+                    <h1>$<span>249</span>.00</h1>
+                </div>
+                <p class="price-old">List Price: <span>$329.00</span></p>
+                <p class="price-shipping">No Import Fees Deposit & $19.98 Shipping to United Kingdom Details</p>
+                <p class="price-available">Available to ship in 1-2 days</p>
+            </div>
+            <div class="product-details-list">
+                <ul>
+                    <li><b>Brand</b> <span>Apple</span></li>
+                    <li><b>Model Name</b> <span>iPad</span></li>
+                    <li><b>Memory Storage Capacity</b> <span>64 GB</span></li>
+                    <li><b>Screen Size</b> <span>10.2 Inches</span></li>
+                    <li><b>Display Resolution Maximum</b> <span>2160 x 1620 Pixels</span></li>
+                </ul>
+            </div>
+            <div class="product-about">
+                <h1>About this item</h1>
+                <ul>
+                    <li>Gorgeous 10.2-inch Retina display with True Tone</li>
+                    <li>A13 Bionic chip with Neural Engine</li>
+                    <li>8MP Wide back camera, 12MP Ultra Wide front camera with Center Stage</li>
+                    <li>Up to 256GB storage</li>
+                    <li>Stereo speakers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-d-purchase">
+            <div class="title-price">
+                <p>Buy New:</p>
+                <h1>$<span>249</span>.00</h1>
+            </div>
+            <div class="gap">
+                <p>No Import Fees Deposit & $19.98 Shipping to United Kingdom Details</p>
+                <p class="delivery-time">Delivery <span>Thursday, August 24</span></p>
+                <p class="stock">In Stock</p>
+            </div>
+            <div class="button-area">
+                <a href="cart.html" style="width: 100%;"><button class="cart-btn" style="width: 100%;">Add to
+                        Cart</button></a>
+                <a href="signin.html" style="width: 100%;"><button class="buy-btn" style="width: 100%;">Buy
+                        Now</button></a>
+            </div>
+            <div class="gap">
+                <p>Ships from <span>Amazon.com</span></p>
+                <p>Sold by <span>Amazon.com</span></p>
+                <p>Returns <span>Returnable within 30 days of receipt</span></p>
+                <p>Payment <span>Secure transaction</span></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#" class="footer-top">
+            Back to Top
+        </a>
+        <div class="footer-detail">
+            <ul>
+                <h3>Get to Know Us</h3>
+                <li>Careers</li>
+                <li>Blog</li>
+                <li>About Amazon</li>
+                <li>Investor Relations</li>
+                <li>Amazon Devices</li>
+                <li>Amazon Science</li>
+            </ul>
+            <ul>
+                <h3>Make Money with Us</h3>
+                <li>Sell products on Amazon</li>
+                <li>Sell on Amazon Business</li>
+                <li>Sell apps on Amazon</li>
+                <li>Become an Affiliate</li>
+                <li>Advertise Your Products</li>
+                <li>Self-Publish with Us</li>
+                <li>Host an Amazon Hub</li>
+            </ul>
+            <ul>
+                <h3>Amazon Payment Products</h3>
+                <li>Amazon Business Card</li>
+                <li>Shop with Points</li>
+                <li>Reload Your Balance</li>
+                <li>Amazon Currency Converter</li>
+            </ul>
+            <ul>
+                <h3>Let Us Help You</h3>
+                <li>Amazon and COVID-19</li>
+                <li>Your Account</li>
+                <li>Your Orders</li>
+                <li>Shipping Rates & Policies</li>
+                <li>Returns & Replacements</li>
+                <li>Manage Your Content and Devices</li>
+                <li>Amazon Assistant</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <div class="footer-copy">
+            <img src="./assets/amazon_logo.png" width="100" alt="">
+            <p>&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

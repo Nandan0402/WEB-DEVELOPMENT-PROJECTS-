@@ -1,0 +1,169 @@
+.cart {
+    background: #eaeded;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+/* Left Cart Section */
+.cart-left {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+}
+
+.cart-left h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cart-line {
+    height: 1px;
+    background: #ddd;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+}
+
+.cart-img img {
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.cart-details {
+    flex: 1;
+}
+
+.cart-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #0f1111;
+    margin-bottom: 5px;
+}
+
+.cart-stock {
+    color: #007600;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.cart-shipping {
+    font-size: 12px;
+    color: #565959;
+    margin-bottom: 10px;
+}
+
+.cart-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.cart-action select {
+    padding: 5px;
+    border-radius: 7px;
+    background: #f0f2f2;
+    border: 1px solid #d5d9d9;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, .5);
+}
+
+.cart-action .link {
+    color: #007185;
+    cursor: pointer;
+}
+
+.cart-action .link:hover {
+    text-decoration: underline;
+}
+
+.cart-action .separator {
+    color: #ddd;
+}
+
+.cart-price p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart-subtotal-item {
+    text-align: right;
+    font-size: 18px;
+}
+
+/* Right Cart Section (Subtotal) */
+.cart-right {
+    min-width: 300px;
+    background: #fff;
+    padding: 20px;
+    height: fit-content;
+}
+
+.subtotal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subtotal p {
+    font-size: 18px;
+}
+
+.subtotal button {
+    background: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, .5);
+}
+
+.subtotal button:hover {
+    background: #f7ca00;
+}
+
+.gift-check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.gift-check input {
+    width: 13px;
+    height: 13px;
+}
+
+.gift-check p {
+    font-size: 14px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+    .cart {
+        flex-direction: column;
+    }
+
+    .cart-right {
+        order: -1;
+        width: 100%;
+        min-width: unset;
+    }
+
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .cart-img img {
+        margin: 0 auto;
+        display: block;
+    }
+}

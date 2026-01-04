@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar-container-navigation" id="sidebar-container">
+        <div class="sidebar-left-part">
+            <div class="sidebar-top">
+                <div
+                    style="background: white; border-radius: 50%; height: 25px; width: 25px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                    <!-- Simple CSS user icon placeholder -->
+                    <div style="background: #232f3e; height: 10px; width: 10px; border-radius: 50%; margin-top: -5px;">
+                    </div>
+                    <div
+                        style="background: #232f3e; height: 10px; width: 16px; border-radius: 50%; position: absolute; margin-top: 12px;">
+                    </div>
+                </div>
+                <h2>Hello, sign in</h2>
+                <div id="sidebar-close-btn"
+                    style="color: #fff; font-size: 30px; cursor: pointer; position: absolute; right: -40px; top: 0px;">
+                    &times;</div>
+            </div>
+        </div>
+        <div class="sidebar-wrap">
+            <div class="sidebar-item">
+                <h2>Trending</h2>
+                <p>Bestsellers</p>
+                <p>New Releases</p>
+                <p>Movers and Shakers</p>
+            </div>
+            <div class="sidebar-item">
+                <h2>Digital Content and Devices</h2>
+                <p>Echo & Alexa <span>&#8250;</span></p>
+                <p>Fire TV <span>&#8250;</span></p>
+                <p>Kindle E-Readers & eBooks <span>&#8250;</span></p>
+                <p>Audible Audiobooks <span>&#8250;</span></p>
+                <p>Amazon Prime Video <span>&#8250;</span></p>
+                <p>Amazon Prime Music <span>&#8250;</span></p>
+            </div>
+            <div class="sidebar-item">
+                <h2>Shop by Category</h2>
+                <p>Mobiles, Computers <span>&#8250;</span></p>
+                <p>TV, Appliances, Electronics <span>&#8250;</span></p>
+                <p>Men's Fashion <span>&#8250;</span></p>
+                <p>Women's Fashion <span>&#8250;</span></p>
+                <p>See all <span>&#8964;</span></p>
+            </div>
+            <div class="sidebar-item">
+                <h2>Programs & Features</h2>
+                <p>Gift Cards & Mobile Recharges <span>&#8250;</span></p>
+                <p>Amazon Launchpad <span>&#8250;</span></p>
+                <p>Amazon Business</p>
+                <p>Handloom and Handicrafts</p>
+                <p>See all <span>&#8964;</span></p>
+            </div>
+            <div class="sidebar-item">
+                <h2>Help & Settings</h2>
+                <p>Your Account</p>
+                <p>Customer Service</p>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-right-part" id="sidebar-overlay"></div>
+    
+    <nav>
+        <a href="index.html" class="nav-hover nav-logo">
+            <img src="./assets/amazon_logo.png" width="100px" alt="amazon_logo">
+        </a>
+        <div class="nav-country nav-hover">
+            <img src="./assets/location_icon.png" height="20px" alt="">
+            <div>
+                <p>Delivering to Bengaluru 562130</p>
+                <h1>Update location</h1>
+            </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12px" alt="">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Amazon.in">
+            <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
+        </div>
+        <div class="nav-language nav-hover">
+            <img src="./assets/us_flag.png" width="25px" alt="">
+            <p>EN</p>
+            <img src="./assets/dropdown_icon.png" width="8px" alt="">
+            <div class="dropdown-menu">
+                <ul>
+                    <li><input type="radio" name="language" checked> English - EN</li>
+                    <li><input type="radio" name="language"> हिन्दी - HI</li>
+                    <li><input type="radio" name="language"> தமிழ் - TA</li>
+                    <li><input type="radio" name="language"> తెలుగు - TE</li>
+                    <li><input type="radio" name="language"> ಕನ್ನಡ - KN</li>
+                </ul>
+            </div>
+        </div>
+        <a href="signin.html" class="nav-text nav-hover">
+            <p>Hello, Sign in</p>
+            <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""></h1>
+            <div class="dropdown-menu" style="width: 250px;">
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <button class="signin-btn" onclick="window.location.href='signin.html'">Sign in</button>
+                    <p style="font-size: 11px;">New customer? <a href="signup.html" style="color: #007185;">Start
+                            here.</a></p>
+                </div>
+                <hr>
+                <div style="display: flex;">
+                    <div style="width: 50%;">
+                        <h4 style="margin: 5px 10px;">Your Lists</h4>
+                        <ul>
+                            <li>Create a link</li>
+                            <li>Find a list</li>
+                            <li>Wish from any site</li>
+                        </ul>
+                    </div>
+                    <div style="width: 50%; border-left: 1px solid #eee;">
+                        <h4 style="margin: 5px 10px;">Your Account</h4>
+                        <ul>
+                            <li>Your Account</li>
+                            <li>Your Orders</li>
+                            <li>Your Whislist</li>
+                            <li>Sign Out</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="nav-text nav-hover">
+            <p>Returns</p>
+            <h1>& Orders </h1>
+        </div>
+        <a href="cart.html" class="nav-cart nav-hover">
+            <img src="./assets/cart_icon.png" width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+    <div class="nav-bottom">
+        <div class="nav-bottom-left">
+            <div>
+                <img src="./assets/menu_icon.png" width="25px" alt="">
+                <p>All</p>
+            </div>
+            <a href="product.html">Fresh</a>
+            <a href="#">MX Player</a>
+            <a href="#">Sell</a>
+            <a href="product.html">Bestsellers</a>
+            <a href="product.html">Mobiles</a>
+            <a href="product.html">Today's Deals</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Prime</a>
+            <a href="#">Amazon Pay</a>
+        </div>
+    </div>
+    <div class="header-slider">
+        <a href="#" class="control_prev"><i class="arrow-left"></i></a>
+        <a href="#" class="control_next"><i class="arrow-right"></i></a>
+        <ul>
+            <img src="./assets/header1.jpg" class="header-img" alt="">
+            <img src="./assets/header2.jpg" class="header-img" alt="">
+            <img src="./assets/header3.jpg" class="header-img" alt="">
+            <img src="./assets/header4.jpg" class="header-img" alt="">
+            <img src="./assets/header5.jpg" class="header-img" alt="">
+            <img src="./assets/header6.jpg" class="header-img" alt="">
+        </ul>
+    </div>
+    <div class="box-row header-box">
+        <div class="box-col">
+            <h3>Continue shopping deals</h3>
+            <div style="display: flex; gap: 10px;">
+                <img src="./assets/box1-1.jpg" alt="" style="width: 45%;">
+                <img src="./assets/box1-2.jpg" alt="" style="width: 45%;">
+            </div>
+            <a href="product.html">See all deals</a>
+        </div>
+        <div class="box-col">
+            <h3>Revamp your home in style</h3>
+            <img src="./assets/box1-3.jpg" alt="">
+            <a href="product.html">Explore all</a>
+        </div>
+        <div class="box-col">
+            <h3>Bulk order discounts + Up to 18% GST savings</h3>
+            <img src="./assets/box1-4.jpg" alt="">
+            <a href="product.html">See more</a>
+        </div>
+        <div class="box-col">
+            <h3>Appliances for your home | Up to 55% off</h3>
+            <img src="./assets/box2-1.jpg" alt="">
+            <a href="product.html">See more</a>
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Starting ₹99 | Home improvement essentials</h3>
+            <img src="./assets/box2-2.jpg" alt="">
+            <a href="product.html">Explore more</a>
+        </div>
+        <div class="box-col">
+            <h3>Furniture | Up to 60% off</h3>
+            <img src="./assets/box2-3.jpg" alt="">
+            <a href="product.html">See more</a>
+        </div>
+        <div class="box-col">
+            <h3>Up to 75% off | Headphones</h3>
+            <img src="./assets/box2-4.jpg" alt="">
+            <a href="product.html">See all offers</a>
+        </div>
+        <div class="box-col">
+            <h3>Minimum 50% off | Home, Kitchen & more</h3>
+            <img src="./assets/box3-1.jpg" alt="">
+            <a href="product.html">See all</a>
+        </div>
+    </div>
+    <div class="products-slider">
+        <h2>Best Sellers in Computers & Accessories</h2>
+        <div class="products-slider-with-btn">
+            <a href="product.html" class="product-card">
+                <img src="./assets/product1-1.jpg" alt="">
+                <h4>HP Laptop 15s</h4>
+                <p class="product-price">₹40,990</p>
+                <p class="product-price-old">M.R.P.: ₹50,000</p>
+            </a>
+            <a href="product.html" class="product-card">
+                <img src="./assets/product1-2.jpg" alt="">
+                <h4>BoAt Airdopes</h4>
+                <p class="product-price">₹1,299</p>
+                <p class="product-price-old">M.R.P.: ₹2,990</p>
+            </a>
+            <a href="product.html" class="product-card">
+                <img src="./assets/product1-3.jpg" alt="">
+                <h4>Samsung Galaxy M14</h4>
+                <p class="product-price">₹12,490</p>
+                <p class="product-price-old">M.R.P.: ₹18,990</p>
+            </a>
+            <a href="product.html" class="product-card">
+                <img src="./assets/product1-4.jpg" alt="">
+                <h4>Sony WH-1000XM5</h4>
+                <p class="product-price">₹26,990</p>
+                <p class="product-price-old">M.R.P.: ₹34,990</p>
+            </a>
+            <a href="product.html" class="product-card">
+                <img src="./assets/product1-5.jpg" alt="">
+                <h4>Logitech Mouse</h4>
+                <p class="product-price">₹399</p>
+                <p class="product-price-old">M.R.P.: ₹595</p>
+            </a>
+            <a href="product.html" class="product-card">
+                <img src="./assets/product1-6.jpg" alt="">
+                <h4>Sandisk Cruzer</h4>
+                <p class="product-price">₹349</p>
+                <p class="product-price-old">M.R.P.: ₹400</p>
+            </a>
+        </div>
+    </div>
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Minimum 50% off | Home, Kitchen & more</h3>
+            <img src="./assets/box3-1.jpg" alt="">
+            <a href="product.html">See all</a>
+        </div>
+        <div class="box-col">
+            <h3>Customers' Most-Loved Fashion for you</h3>
+            <img src="./assets/box3-2.jpg" alt="">
+            <a href="product.html">Explore more</a>
+        </div>
+        <div class="box-col">
+            <h3>Up to 60% off | Daily needs</h3>
+            <img src="./assets/box3-3.jpg" alt="">
+            <a href="product.html">See more</a>
+        </div>
+        <div class="box-col">
+            <h3>Best Sellers in Sports & Outdoors</h3>
+            <img src="./assets/box3-4.jpg" alt="">
+            <a href="product.html">See all</a>
+        </div>
+    </div>
+
+    <div class="signin-suggestion-box"
+        style="background: #fff; padding: 30px; margin: 20px 30px; text-align: center; border-radius: 4px; border: 1px solid #ddd;">
+        <div style="margin-bottom: 5px; font-size: 13px;">See personalized recommendations</div>
+        <button onclick="window.location.href='signin.html'"
+            style="background: #ffc200; border: 1px solid #a88734; border-radius: 5px; padding: 6px 100px; font-weight: 700; cursor: pointer; box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;">Sign
+            in</button>
+        <div style="font-size: 11px; margin-top: 5px;">New customer? <a href="signup.html" style="color: #007185;">Start
+                here.</a></div>
+    </div>
+    <footer>
+        <a href="#" class="footer-top">
+            Back to Top
+        </a>
+        <div class="footer-detail">
+            <ul>
+                <h3>Get to Know Us</h3>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </ul>
+            <ul>
+                <h3>Connect with Us</h3>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+            <ul>
+                <h3>Make Money with Us</h3>
+                <li>Sell on Amazon</li>
+                <li>Sell under Amazon Accelerator</li>
+                <li>Protect and Build Your Brand</li>
+                <li>Amazon Global Selling</li>
+                <li>Become an Affiliate</li>
+                <li>Fulfilment by Amazon</li>
+                <li>Advertise Your Products</li>
+                <li>Amazon Pay on Merchants</li>
+            </ul>
+            <ul>
+                <h3>Let Us Help You</h3>
+                <li>COVID-19 and Amazon</li>
+                <li>Your Account</li>
+                <li>Returns Centre</li>
+                <li>100% Purchase Protection</li>
+                <li>Amazon App Download</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <div class="footer-copy">
+            <img src="./assets/amazon_logo.png" width="100" alt="">
+            <p>&copy; 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
